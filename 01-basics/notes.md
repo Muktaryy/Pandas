@@ -88,3 +88,34 @@ The labels make it easier to identify values by name.
 - `Omar` → `30`
 
 Labels are useful when the index represents meaningful information, such as names or IDs.
+
+## DataFrame Basics
+
+A DataFrame is a two-dimensional table with rows and columns.
+
+Think of a DataFrame like a small spreadsheet:
+
+- columns represent different pieces of information
+- rows represent individual records
+
+### Example
+
+```python
+students = pd.DataFrame({
+    "name": ["Ali", "Asha", "Omar"],
+    "age": [20, 25, 30]
+})
+
+print(students)
+```
+
+This creates a table with two columns: `name` and `age`.
+
+### Why do we use it?
+
+Most real-world datasets are tables. DataFrames make it easier to inspect, filter, clean, and analyze that tabular data.
+
+A simple way to remember the difference:
+
+- **Series** → one column
+- **DataFrame** → multiple columns and rows
