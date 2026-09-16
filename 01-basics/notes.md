@@ -11,3 +11,21 @@
 ## Notes
 
 I will add my own notes here as I learn each concept.
+
+## What is a Series?
+
+A Series is like one column of data.
+
+### Example
+
+```python
+import pandas as pd
+
+ages = pd.Series([20, 25, 30])
+
+print(ages)
+```
+
+### Why do we use it?
+
+A Series is useful when we have one-dimensional data, such as ages, names, or prices.
