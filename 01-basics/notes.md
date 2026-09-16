@@ -29,3 +29,21 @@ print(ages)
 ### Why do we use it?
 
 A Series is useful when we have one-dimensional data, such as ages, names, or prices.
+
+## Series Attributes
+
+A Series has attributes that help us understand its data.
+
+### Example
+
+```python
+print(ages.dtype)
+print(ages.shape)
+print(ages.size)
+```
+
+- `dtype` tells us the data type.
+- `shape` tells us the number of rows.
+- `size` tells us the total number of values.
+
+These attributes are useful when exploring data before working with it.
