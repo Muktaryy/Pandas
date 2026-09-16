@@ -1,8 +1,8 @@
 # Pandas Journey 🐼
 
-My journey learning pandas for data analysis and data engineering.
+My journey learning **pandas** for Data Analysis and Data Engineering.
 
-I'm learning pandas step by step by writing notes, practicing code, working with datasets, and building small projects.
+I'm learning pandas step by step by understanding the ideas, writing code, practicing with data, and building small projects.
 
 ## Learning Flow
 
@@ -11,18 +11,19 @@ Python
   ↓
 pandas
   │
+  ├── Basics
   ├── Series
-  ├── DataFrame
+  ├── DataFrames
   ├── Read CSV / JSON
-  ├── Inspect data
-  ├── Select columns
-  ├── Filter rows
-  ├── Sort
-  ├── Clean
-  ├── Missing values
+  ├── Explore Data
+  ├── Select & Filter
+  ├── Sort Data
+  ├── Clean Data
+  ├── Missing Values
   ├── GroupBy
   ├── Merge / Join
-  └── Analyze
+  ├── Visualization
+  └── Analyze Data
         ↓
    Data Analysis
         ↓
@@ -36,6 +37,7 @@ pandas
 - [ ] DataFrames
 - [ ] Reading CSV / JSON
 - [ ] Exploring Data
+- [ ] Selecting Data
 - [ ] Filtering Data
 - [ ] Sorting Data
 - [ ] Cleaning Data
@@ -46,18 +48,48 @@ pandas
 - [ ] Data Analysis
 - [ ] Projects
 
+## How I Learn
+
+I don't want to only memorize pandas functions. I want to understand **what they do, why I need them, and when to use them**.
+
+For each topic, I will try to follow this pattern:
+
+```text
+What is it?
+    ↓
+Why do I need it?
+    ↓
+Small example
+    ↓
+Understand the output
+    ↓
+Practice
+    ↓
+Small challenge
+    ↓
+Use it with real data
+```
+
+## Repository Structure
+
+```text
+01-basics/       → pandas fundamentals
+02-series/       → Series
+03-dataframes/   → DataFrames
+04-reading-data/ → CSV / JSON and other data sources
+...
+datasets/        → practice datasets
+projects/        → small real-world projects
+```
+
+Each topic can contain:
+
+- `notes.md` — explanations in simple words
+- `practice.py` — code I write and run myself
+
 ## Goal
 
-Understand how to work with real-world data using Python and pandas, rather than only memorizing pandas functions.
-
-## How I Will Learn
-
-Each topic has two files:
-
-- `notes.md` — what I learned in simple words.
-- `practice.py` — code I write and run myself.
-
-The `datasets/` folder contains small practice datasets, and `projects/` is where I will combine what I learned into real analyses.
+Become comfortable working with real-world data using Python and pandas, then use that foundation for **Data Analysis, Data Engineering, and Machine Learning**.
 
 ## Projects
 
