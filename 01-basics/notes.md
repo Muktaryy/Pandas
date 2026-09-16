@@ -67,3 +67,24 @@ The positions start at `0`, so for `[20, 25, 30]`:
 - position `2` → `30`
 
 `iloc` is useful when we want to access data by its integer position.
+
+## Series Labels
+
+A Series can also have custom labels instead of only using the default integer index.
+
+### Example
+
+```python
+ages = pd.Series([20, 25, 30], index=["Ali", "Asha", "Omar"])
+
+print(ages["Ali"])
+print(ages["Omar"])
+```
+
+The labels make it easier to identify values by name.
+
+- `Ali` → `20`
+- `Asha` → `25`
+- `Omar` → `30`
+
+Labels are useful when the index represents meaningful information, such as names or IDs.
