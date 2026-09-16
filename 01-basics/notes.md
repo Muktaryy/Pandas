@@ -1,13 +1,11 @@
-# 01 — pandas Basics
+## What is a Series?
 
-## What I will learn
+A Series is like one column of data.
 
-- What pandas is and why it is useful.
-- How to import pandas with `import pandas as pd`.
-- How pandas represents tabular data.
-- The difference between a Series and a DataFrame.
-- How to create my first small DataFrame.
+### Example
 
-## Notes
+```python
+import pandas as pd
 
-I will add my own notes here as I learn each concept.
+ages = pd.Series([20, 25, 30])
+print(ages)
