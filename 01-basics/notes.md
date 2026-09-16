@@ -47,3 +47,23 @@ print(ages.size)
 - `size` tells us the total number of values.
 
 These attributes are useful when exploring data before working with it.
+
+## Series Indexing
+
+Indexing lets us access a specific value in a Series by its position.
+
+### Example
+
+```python
+print(ages.iloc[0])
+print(ages.iloc[1])
+print(ages.iloc[2])
+```
+
+The positions start at `0`, so for `[20, 25, 30]`:
+
+- position `0` → `20`
+- position `1` → `25`
+- position `2` → `30`
+
+`iloc` is useful when we want to access data by its integer position.
