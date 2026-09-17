@@ -170,3 +170,29 @@ In this example:
 - Omar → `30 >= 25` → `True` → kept
 
 Filtering is important because real datasets can contain thousands or millions of rows, and we often need to analyze only the records that match a specific condition.
+
+## Sorting DataFrame Rows
+
+After filtering data, we may want to arrange the rows in a specific order.
+
+### Sort by one column
+
+```python
+sorted_students = students.sort_values("age")
+
+print(sorted_students)
+```
+
+By default, `sort_values()` sorts the values from **smallest to largest** (ascending order).
+
+### Sort in descending order
+
+```python
+sorted_students = students.sort_values("age", ascending=False)
+
+print(sorted_students)
+```
+
+`ascending=False` changes the order to **largest to smallest**.
+
+Sorting is useful when we want to find things like the oldest students, highest scores, or cheapest products more easily.
