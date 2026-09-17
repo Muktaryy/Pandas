@@ -196,3 +196,42 @@ print(sorted_students)
 `ascending=False` changes the order to **largest to smallest**.
 
 Sorting is useful when we want to find things like the oldest students, highest scores, or cheapest products more easily.
+
+## Missing Data
+
+Real-world datasets often contain missing values. For example, a student may have no recorded age or score.
+
+In pandas, missing values are commonly represented by `NaN`.
+
+### Example
+
+```python
+students = pd.DataFrame({
+    "name": ["Ali", "Asha", "Omar"],
+    "age": [20, None, 30]
+})
+
+print(students)
+```
+
+Here, Asha's age is missing.
+
+### Find missing values
+
+```python
+print(students.isna())
+```
+
+`isna()` checks each value and returns:
+
+- `True` → the value is missing
+- `False` → the value is present
+
+We can also count missing values in each column:
+
+```python
+print(students.isna().sum())
+```
+
+This is an important first step in data cleaning because missing values can affect our analysis.
+
