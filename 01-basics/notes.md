@@ -235,3 +235,37 @@ print(students.isna().sum())
 
 This is an important first step in data cleaning because missing values can affect our analysis.
 
+
+## Cleaning Missing Data
+
+Finding missing values is only the first step. When data is missing, we need to decide what to do with it.
+
+### Remove rows with missing values
+
+```python
+clean_students = students.dropna()
+
+print(clean_students)
+```
+
+`dropna()` removes rows that contain missing values.
+
+For example, if Asha has no age, her row will be removed.
+
+### Fill missing values
+
+Sometimes we do not want to remove the row. We can replace the missing value with another value.
+
+```python
+students["age"] = students["age"].fillna(0)
+
+print(students)
+```
+
+`fillna(0)` replaces missing values with `0`.
+
+The value we choose depends on the meaning of the data. We should not blindly replace missing values without thinking about what makes sense for the dataset.
+
+### Why cleaning matters
+
+Real-world data is rarely perfect. Cleaning helps us prepare data before analysis so that missing values do not produce misleading results.
