@@ -146,3 +146,27 @@ The important difference is the brackets:
 - `students[["name", "age"]]` → multiple columns → DataFrame
 
 Column selection is useful because real datasets often contain many columns, but we may only need a few for our analysis.
+
+## Filtering DataFrame Rows
+
+After selecting the columns we need, we often want only the rows that match a condition.
+
+### Example
+
+```python
+adults = students[students["age"] >= 25]
+
+print(adults)
+```
+
+Here, `students["age"] >= 25` creates a True/False condition for each row.
+
+Pandas then uses that condition to keep only the rows where the condition is `True`.
+
+In this example:
+
+- Ali → `20 >= 25` → `False` → removed
+- Asha → `25 >= 25` → `True` → kept
+- Omar → `30 >= 25` → `True` → kept
+
+Filtering is important because real datasets can contain thousands or millions of rows, and we often need to analyze only the records that match a specific condition.
