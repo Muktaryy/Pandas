@@ -269,3 +269,48 @@ The value we choose depends on the meaning of the data. We should not blindly re
 ### Why cleaning matters
 
 Real-world data is rarely perfect. Cleaning helps us prepare data before analysis so that missing values do not produce misleading results.
+
+## Grouping Data with groupby()
+
+Sometimes we do not want to analyze every row individually. We want to combine rows that belong to the same group.
+
+For example, if we have students from different cities, we may want to know the average age for each city.
+
+### Example
+
+```python
+students = pd.DataFrame({
+    "name": ["Ali", "Asha", "Omar", "Hodan"],
+    "city": ["Hargeisa", "Hargeisa", "Garowe", "Garowe"],
+    "age": [20, 24, 30, 26]
+})
+
+average_age = students.groupby("city")["age"].mean()
+
+print(average_age)
+```
+
+Here, `groupby("city")` puts rows with the same city into the same group.
+
+Then `["age"].mean()` calculates the average age for each group.
+
+The result answers a question like:
+
+- What is the average age in Hargeisa?
+- What is the average age in Garowe?
+
+### Count groups
+
+We can also count how many records are in each group.
+
+```python
+print(students.groupby("city").size())
+```
+
+This is useful for questions such as:
+
+- How many students are from each city?
+- How many products belong to each category?
+- How many employees work in each department?
+
+`groupby()` is one of the most useful pandas tools for real-world data analysis because it lets us turn many individual rows into meaningful group-level summaries.
