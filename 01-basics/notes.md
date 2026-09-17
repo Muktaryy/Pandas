@@ -119,3 +119,30 @@ A simple way to remember the difference:
 
 - **Series** → one column
 - **DataFrame** → multiple columns and rows
+
+## Selecting DataFrame Columns
+
+After creating a DataFrame, we often need only one or a few columns.
+
+### Select one column
+
+```python
+print(students["name"])
+```
+
+Selecting one column returns a **Series**.
+
+### Select multiple columns
+
+```python
+print(students[["name", "age"]])
+```
+
+Selecting multiple columns returns a **DataFrame**.
+
+The important difference is the brackets:
+
+- `students["name"]` → one column → Series
+- `students[["name", "age"]]` → multiple columns → DataFrame
+
+Column selection is useful because real datasets often contain many columns, but we may only need a few for our analysis.
